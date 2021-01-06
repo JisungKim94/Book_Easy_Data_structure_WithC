@@ -65,7 +65,7 @@ element peek(LQueueType *LQ) {
 	if (isEmpty(LQ)) return 0;
 	else {
 		item = LQ->front->data;
-		return item;
+		return item; 
 	}
 }
 
@@ -75,7 +75,7 @@ void printLQ(LQueueType *LQ) {
 	printf(" Linked Queue : [");
 	while (temp) {
 		printf("%3c", temp->data);
-		temp = temp->link;
+		temp = temp->link;	// link는 다음 Node의 주소를 가리키는 포인터니까 temp에 지정하면 
 	}
 	printf(" ] ");
 }
